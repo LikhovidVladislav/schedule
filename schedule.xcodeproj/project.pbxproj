@@ -12,6 +12,7 @@
 		FC67259C21EBAE3A000B6176 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC67259A21EBAE3A000B6176 /* Main.storyboard */; };
 		FC67259E21EBAE3C000B6176 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC67259D21EBAE3C000B6176 /* Assets.xcassets */; };
 		FC6725A121EBAE3C000B6176 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC67259F21EBAE3C000B6176 /* LaunchScreen.storyboard */; };
+		FC6725AB21FFB09D000B6176 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6725AA21FFB09D000B6176 /* model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FC67259D21EBAE3C000B6176 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC6725A021EBAE3C000B6176 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC6725A221EBAE3C000B6176 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC6725AA21FFB09D000B6176 /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,39 @@
 		FC67259521EBAE3A000B6176 /* schedule */ = {
 			isa = PBXGroup;
 			children = (
+				FC6725A221EBAE3C000B6176 /* Info.plist */,
 				FC67259621EBAE3A000B6176 /* AppDelegate.swift */,
+				FC6725AC22005AA9000B6176 /* View */,
+				FC6725A921FFAFDB000B6176 /* Model */,
+				FC6725AD22005AE3000B6176 /* Controller */,
+			);
+			path = schedule;
+			sourceTree = "<group>";
+		};
+		FC6725A921FFAFDB000B6176 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC6725AA21FFB09D000B6176 /* model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC6725AC22005AA9000B6176 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				FC67259821EBAE3A000B6176 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC6725AD22005AE3000B6176 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				FC67259A21EBAE3A000B6176 /* Main.storyboard */,
 				FC67259D21EBAE3C000B6176 /* Assets.xcassets */,
 				FC67259F21EBAE3C000B6176 /* LaunchScreen.storyboard */,
-				FC6725A221EBAE3C000B6176 /* Info.plist */,
 			);
-			path = schedule;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC67259921EBAE3A000B6176 /* ViewController.swift in Sources */,
+				FC6725AB21FFB09D000B6176 /* model.swift in Sources */,
 				FC67259721EBAE3A000B6176 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +310,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7R2V8MVW5R;
 				INFOPLIST_FILE = schedule/Info.plist;
@@ -291,6 +320,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vladlihovid.schedule;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,6 +330,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7R2V8MVW5R;
 				INFOPLIST_FILE = schedule/Info.plist;
@@ -309,6 +340,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vladlihovid.schedule;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
